@@ -6,6 +6,7 @@ This application corrects the grammar of provided sentences using OpenAI's GPT-3
 
 1. Clone the repository.
 2. Install the required npm packages using `npm install`.
+3. Create `.env` file and put there your OpenAi Api Key: `OPENAI_API_TOKEN=value`
 3. Start the server using `npm start`.
 
 Open the browser and navigate to `http://localhost:3000/index.html` to use the application.
