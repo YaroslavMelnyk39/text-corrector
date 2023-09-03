@@ -1,14 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
-const cors = require('cors');
 const sqlite3 = require('sqlite3').verbose();
 const app = express();
 
 require('dotenv').config();
 
 const db = new sqlite3.Database('./corrections.db');
-app.use(cors());
 app.use(bodyParser.json());
 
 app.use(express.static(__dirname));
