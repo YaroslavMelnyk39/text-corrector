@@ -16,7 +16,7 @@ async function correctSentence() {
 
         const data = await response.json();
 
-        document.getElementById('result').textContent = `Original: ${data.original}\nCorrected: ${data.corrected}`;
+        document.getElementById('result').textContent = data.corrected;
     } catch (err) {
         alert('Error correcting the sentence.');
     }
